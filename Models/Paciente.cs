@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace Laboratorio.Models
 {
     public class Paciente
@@ -7,7 +9,7 @@ namespace Laboratorio.Models
         private String? endereco {get; set;}
         private String? CEP {get; set;}
         private String? telefone {get; set;}
-        private DateTime dataNascimento {get; set;}
+        private DateOnly dataNascimento {get; set;}
         private String? RG {get; set;}
         private String? CPF {get; set;}
         private Cidade cidade = new Cidade();
@@ -67,11 +69,11 @@ namespace Laboratorio.Models
         }
 
         //Data de nascimento
-        public DateTime getDataNascimento()
+        public DateOnly getDataNascimento()
         {
             return dataNascimento;
         }
-        public void setDataNascimento( DateTime dataNascimento)
+        public void setDataNascimento( DateOnly dataNascimento)
         {
             this.dataNascimento = dataNascimento;
         }
@@ -123,8 +125,9 @@ namespace Laboratorio.Models
             Console.Write("telefone: ");
             this.setTelefone(Console.ReadLine());
 
+            
             Console.Write("Data de Nascimento Ex:[00/00/0000]:  ");
-            this.setDataNascimento(Console.ReadLine());
+            this.setDataNascimento();
         }
     }
 }
