@@ -31,5 +31,17 @@ namespace Laboratorio.Models
         {
             this.nome = nome;
         }
+
+        //Metodos
+
+
+        public void cadastrar()
+        {
+            
+        }
+        public void imprimirCidade()
+        {
+
+        }
     }
 }
