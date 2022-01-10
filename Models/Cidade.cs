@@ -2,10 +2,10 @@ namespace Laboratorio.Models
 {
     public class Cidade
     {
-        private String nome, ddd;
+        private String? nome, ddd;
         private Uf uf = new Uf();
 
-        public String getDdd()
+        public String? getDdd()
         {
             return ddd;
         }
@@ -23,7 +23,7 @@ namespace Laboratorio.Models
             this.uf = uf;
         }
 
-        public String getNome()
+        public String? getNome()
         {
             return nome;
         }
@@ -37,11 +37,23 @@ namespace Laboratorio.Models
 
         public void cadastrar()
         {
-            
+            Console.WriteLine("Cidade: ");
+            this.setNome(Console.ReadLine());
+
+            Console.WriteLine("DDD: ");
+            this.setDdd(Console.ReadLine());
         }
         public void imprimirCidade()
         {
+            Console.WriteLine("Cidade: "+this.getNome());
+            Console.WriteLine("DDD: "+this.getDdd());
+            uf.imprimirUf();
+        }
 
+        public void listarCidades()
+        {
+            Console.WriteLine(" | "+this.getUf());
+            Console.WriteLine(" | "+this.getNome());
         }
     }
 }

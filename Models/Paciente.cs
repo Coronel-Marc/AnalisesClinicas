@@ -27,7 +27,7 @@ namespace Laboratorio.Models
         }
 
         //nome
-        public String getNome()
+        public String? getNome()
         {
             return nome;
         }
@@ -38,7 +38,7 @@ namespace Laboratorio.Models
 
 
         //endereço
-        public String getEndereco()
+        public String? getEndereco()
         {
             return endereco;
         }
@@ -49,7 +49,7 @@ namespace Laboratorio.Models
 
 
         //CEP
-        public String getCEP()
+        public String? getCEP()
         {
             return CEP;
         }
@@ -59,7 +59,7 @@ namespace Laboratorio.Models
         }
 
         //telefone
-        public String getTelefone()
+        public String? getTelefone()
         {
             return telefone;
         }
@@ -69,7 +69,7 @@ namespace Laboratorio.Models
         }
 
         //Data de nascimento
-        public String getDataNascimento()
+        public String? getDataNascimento()
         {
             string.Format("{0:d/M/yyyy}", dataNascimento);
             return dataNascimento;
@@ -80,7 +80,7 @@ namespace Laboratorio.Models
         }
 
         //RG
-        public String getRG()
+        public String? getRG()
         {
             return RG;
         }
@@ -90,7 +90,7 @@ namespace Laboratorio.Models
         }
 
         //CPF
-        public String getCPF()
+        public String? getCPF()
         {
             return CPF;
         }

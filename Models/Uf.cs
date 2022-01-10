@@ -2,9 +2,10 @@ namespace Laboratorio.Models
 {
     public class Uf
     {
-        private String nome;
-        private String sigla;
-        public String getNome()
+        private String? nome;
+        private String? sigla;
+
+        public String? getNome()
         {
             return nome;
         }
@@ -12,13 +13,28 @@ namespace Laboratorio.Models
         {
             this.nome = nome;
         }
-        public String getSigla()
+        public String? getSigla()
         {
             return sigla;
         }
         public void setSigla(String sigla)
         {
             this.sigla = sigla;
+        }
+
+        //===========================> Metodos <===========================
+        public void cadastrar()
+        {
+            Console.WriteLine("Estado: ");
+            this.setNome(Console.ReadLine());
+
+            Console.WriteLine("Sigla: ");
+            this.setSigla(Console.ReadLine());
+        }
+        public void imprimirUf()
+        {
+            Console.WriteLine("Estado: "+this.getNome());
+            Console.WriteLine("Sigla: "+this.getSigla());
         }
     }
 }
