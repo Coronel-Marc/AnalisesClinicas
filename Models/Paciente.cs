@@ -1,6 +1,6 @@
-using System.Globalization;
 
-namespace Laboratorio.Models
+
+namespace Laboratorio
 {
     public class Paciente
     {

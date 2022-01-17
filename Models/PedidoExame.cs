@@ -1,5 +1,4 @@
-
-namespace Laboratorio.Models
+namespace Laboratorio
 {
     public class PedidoExame
     {
